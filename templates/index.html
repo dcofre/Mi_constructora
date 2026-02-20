@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ empresa.nombre }} | Construcción</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo-container">
+        <div class="logo-circle"></div>
+        <span class="logo-text">Construcción</span>
+    </div>
+    <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#sobre-nosotros">Sobre Nosotros</a></li> <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <a href="#contacto" class="cta-nav">Solicitar Cotización</a>
+</nav>
+
+<header id="inicio" class="hero">
+    <div class="hero-slider">
+        <img src="{{ url_for('static', filename='images/hero1.jpg') }}" class="slide active">
+        <img src="{{ url_for('static', filename='images/hero2.jpg') }}" class="slide">
+        <img src="{{ url_for('static', filename='images/hero3.jpg') }}" class="slide">
+    </div>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+        <h1>
+            <span class="bold">Construimos</span>
+            <span class="italic">tus sueños</span>
+            <span class="bold">con excelencia</span>
+        </h1>
+        <p>Transformamos ideas en estructuras sólidas con más de 25 años de experiencia</p>
+        <div class="hero-buttons">
+            <a href="#proyectos" class="btn-primary">Ver Proyectos</a>
+            <a href="#contacto" class="btn-secondary">Contáctanos</a>
+        </div>
+    </div>
+</header>
+
+<section id="servicios" class="services">
+    <div class="services-header">
+        <span class="subtitle">NUESTROS SERVICIOS</span>
+        <h2>Soluciones integrales <br> para cada proyecto</h2>
+    </div>
+
+    <div class="services-grid">
+        <div class="service-card">
+            <div class="icon">🏗️</div>
+            <h3>Construcción Residencial</h3>
+            <p>Diseñamos y construimos hogares que reflejan tu estilo de vida con la máxima calidad.</p>
+            <a href="#contacto" class="ver-mas">Ver más →</a>
+        </div>
+
+        <div class="service-card">
+            <div class="icon">🏢</div>
+            <h3>Construcción Comercial</h3>
+            <p>Espacios corporativos y locales comerciales diseñados para potenciar tu negocio.</p>
+            <a href="#contacto" class="ver-mas">Ver más →</a>
+        </div>
+
+        <div class="service-card">
+            <div class="icon">🛠️</div>
+            <h3>Remodelaciones</h3>
+            <p>Transformamos espacios existentes en ambientes modernos y funcionales.</p>
+            <a href="#contacto" class="ver-mas">Ver más →</a>
+        </div>
+
+        <div class="service-card">
+            <div class="icon">📐</div>
+            <h3>Arquitectura</h3>
+            <p>Planificación y diseño detallado para que tu proyecto sea sólido desde el papel.</p>
+            <a href="#contacto" class="ver-mas">Ver más →</a>
+        </div>
+
+        <div class="service-card">
+            <div class="icon">🚧</div>
+            <h3>Infraestructura</h3>
+            <p>Obras civiles y de infraestructura con los más altos estándares de ingeniería.</p>
+            <a href="#contacto" class="ver-mas">Ver más →</a>
+        </div>
+
+        <div class="service-card">
+            <div class="icon">🌱</div>
+            <h3>Obras Sustentables</h3>
+            <p>Soluciones de construcción amigables con el medio ambiente y eficiencia energética.</p>
+            <a href="#contacto" class="ver-mas">Ver más →</a>
+        </div>
+    </div>
+</section>
+
+
+<section id="sobre-nosotros" class="about-premium">
+    <div class="about-header">
+        <p class="italic-subtitle">Construyendo el futuro desde 1998</p>
+        <h1>Más de 25 años <br> construyendo <span class="serif-italic">confianza y calidad</span></h1>
+        <p class="description">Somos líderes en el sector de la construcción, comprometidos con la innovación, la sostenibilidad y la excelencia en cada proyecto.</p>
+    </div>
+
+    <div class="about-stats-grid">
+        <div class="stat-card orange-card">
+            <div class="card-arrow">↗</div>
+            <div class="stat-number">500+</div>
+            <h3>Proyectos completados</h3>
+            <p>con éxito en toda la región</p>
+            <p class="card-quote">"Cada proyecto, una historia de éxito"</p>
+        </div>
+        
+        <div class="stat-card cream-card">
+            <div class="card-arrow">↗</div>
+            <div class="stat-number">98%</div>
+            <p class="stat-desc">Clientes satisfechos que recomiendan nuestros servicios y vuelven a confiar en nosotros para nuevos proyectos de construcción y renovación.</p>
+        </div>
+    </div>
+
+    <div class="about-values-card">
+        <div class="value-item">
+            <div class="value-icon">👤</div>
+            <h3>Equipo Experto</h3>
+            <p>Profesionales altamente cualificados con décadas de experiencia en arquitectura e ingeniería.</p>
+        </div>
+        <div class="value-item">
+            <div class="value-icon">🍂</div>
+            <h3>Sostenibilidad</h3>
+            <p>Comprometidos con prácticas de construcción sostenibles y materiales ecológicos.</p>
+        </div>
+        <div class="value-item">
+            <div class="value-icon">🏅</div>
+            <h3>Calidad Garantizada</h3>
+            <p>Certificaciones internacionales y rigurosos controles de calidad en cada fase.</p>
+        </div>
+    </div>
+</section>
+
+<section id="proyectos" class="projects-section">
+    <div class="projects-header">
+        <h2>Proyectos que <br> transforman espacios</h2>
+        <p>Cada proyecto refleja nuestro compromiso con la excelencia, la innovación y la satisfacción del cliente.</p>
+    </div>
+
+    <div class="projects-grid">
+        <div class="project-card" onclick="openModal('imagen1.jpg', 'Hotel Boutique Urbano', 'COMERCIAL', 'Sevilla, España', 'Este proyecto representa nuestra dedicación a la excelencia en construcción, combinando diseño innovador con técnicas de vanguardia.')">
+            <img src="{{ url_for('static', filename='images/imagen1.jpg') }}" alt="Proyecto 1">
+            <div class="project-hover">
+                <span class="p-category">COMERCIAL</span>
+                <h3 class="p-title">Hotel Boutique Urbano</h3>
+                <span class="p-location">Sevilla, España</span>
+            </div>
+        </div>
+
+        <div class="project-card" onclick="openModal('imagen2.jpg', 'Residencia Natura', 'RESIDENCIAL', 'Madrid, España', 'Una vivienda unifamiliar diseñada para integrarse con el entorno natural, utilizando materiales sostenibles.')">
+            <img src="{{ url_for('static', filename='images/imagen2.jpg') }}" alt="Proyecto 2">
+            <div class="project-hover">
+                <span class="p-category">RESIDENCIAL</span>
+                <h3 class="p-title">Residencia Natura</h3>
+                <span class="p-location">Madrid, España</span>
+            </div>
+        </div>
+
+        <div class="project-card" onclick="openModal('imagen3.jpg', 'Centro Corporativo', 'COMERCIAL', 'Barcelona, España', 'Edificio de oficinas con certificación LEED Gold.')">
+            <img src="{{ url_for('static', filename='images/imagen3.jpg') }}" alt="Proyecto 3">
+            <div class="project-hover"><span class="p-category">COMERCIAL</span><h3 class="p-title">Centro Corporativo</h3><span class="p-location">Barcelona</span></div>
+        </div>
+        <div class="project-card" onclick="openModal('imagen4.jpg', 'Loft Industrial', 'RENOVACIÓN', 'Bilbao, España', 'Transformación de una antigua fábrica en lofts modernos.')">
+            <img src="{{ url_for('static', filename='images/imagen4.jpg') }}" alt="Proyecto 4">
+            <div class="project-hover"><span class="p-category">RENOVACIÓN</span><h3 class="p-title">Loft Industrial</h3><span class="p-location">Bilbao</span></div>
+        </div>
+        </div>
+</section>
+
+<section id="contacto" class="contact-section">
+    <div class="contact-container">
+        <div class="contact-image">
+            <img src="{{ url_for('static', filename='images/contacto.jpg') }}" alt="Equipo de construcción">
+        </div>
+
+        <div class="contact-header">
+            <h2>Comencemos tu proyecto <br> <span class="serif-italic">juntos</span> <br> hoy mismo</h2>
+        </div>
+
+        <form class="contact-form">
+            <div class="form-group">
+                <input type="text" placeholder="Nombre completo" required>
+            </div>
+            
+            <div class="form-group">
+                <input type="email" placeholder="Correo electrónico" required>
+            </div>
+
+            <div class="form-group">
+                <input type="tel" placeholder="Teléfono" required>
+            </div>
+
+            <div class="form-group">
+                <select id="tipo-proyecto" required>
+                    <option value="" disabled selected>Tipo de proyecto</option>
+                    <option value="residencial">Construcción residencial</option>
+                    <option value="comercial">Comercial</option>
+                    <option value="remodelacion">Remodelación y renovación</option>
+                    <option value="arquitectura">Diseño arquitectónico</option>
+                    <option value="consultoria">Consultoría técnica</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <textarea placeholder="Cuéntanos sobre tu proyecto" maxlength="500"></textarea>
+                <span class="char-limit">Máximo 500 caracteres</span>
+            </div>
+
+            <button type="submit" class="btn-submit">Enviar solicitud</button>
+        </form>
+    </div>
+</section>
+
+<div id="projectModal" class="modal-overlay">
+    <div class="modal-content">
+        <button class="close-modal" onclick="closeModal()">×</button>
+        <img id="modalImg" src="" alt="Imagen Proyecto">
+        <div class="modal-info">
+            <span id="modalCategory" class="p-category"></span>
+            <h2 id="modalTitle"></h2>
+            <p id="modalLocation" class="modal-loc"></p>
+            <p id="modalDesc" class="modal-text"></p>
+        </div>
+    </div>
+</div>
+
+<footer class="main-footer">
+    <div class="footer-container">
+        <div class="footer-col newsletter">
+            <h2>Mantente informado</h2>
+            <p>Recibe noticias sobre proyectos y consejos de construcción</p>
+            <form class="footer-form">
+                <input type="email" placeholder="Tu correo electrónico" required>
+                <button type="submit" class="btn-footer">Suscribirse &rarr;</button>
+            </form>
+        </div>
+
+        <div class="footer-col">
+            <h4>NAVEGACIÓN</h4>
+            <ul class="footer-links">
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#sobre-nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>CONTACTO</h4>
+            <p class="contact-data">+34 900 123 456</p>
+            <p class="contact-data">info@construccion.es</p>
+            
+            <h4 class="office-title">OFICINA</h4>
+            <p class="contact-data">Calle Construcción 123<br>28001 Madrid, España</p>
+        </div>
+    </div>
+
+    <hr class="footer-line">
+
+    <div class="footer-bottom">
+        <div class="social-links">
+            <a href="#">LinkedIn</a>
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+        </div>
+        <p class="copyright">© 2026 Construcción Profesional. Todos los derechos reservados.</p>
+        <div class="legal-links">
+            <a href="#">Política de Privacidad</a>
+            <a href="#">Términos de Uso</a>
+        </div>
+    </div>
+</footer>
+
+<script>
+// SCRIPT ÚNICO PARA EL SLIDER
+let slides = document.querySelectorAll(".slide");
+let index = 0;
+
+setInterval(() => {
+    slides[index].classList.remove("active");
+    index = (index + 1) % slides.length;
+    slides[index].classList.add("active");
+}, 5000);
+
+// ANIMACIONES SCROLL
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            entry.target.classList.add('show');
+        }
+    });
+});
+// REEMPLAZAR LA ÚLTIMA LÍNEA DEL SCRIPT
+document.querySelectorAll('.services, .projects, .contact, .about').forEach(el => observer.observe(el));
+function openModal(img, title, category, location, description) {
+    const modal = document.getElementById('projectModal');
+    document.getElementById('modalImg').src = "/static/images/" + img;
+    document.getElementById('modalTitle').innerText = title;
+    document.getElementById('modalCategory').innerText = category;
+    document.getElementById('modalLocation').innerText = location;
+    document.getElementById('modalDesc').innerText = description;
+    
+    modal.style.display = 'flex';
+}
+
+function closeModal() {
+    document.getElementById('projectModal').style.display = 'none';
+}
+
+// Cerrar al hacer clic fuera del contenido
+window.onclick = function(event) {
+    const modal = document.getElementById('projectModal');
+    if (event.target == modal) {
+        closeModal();
+    }
+}
+
+document.querySelector('.contact-form').addEventListener('submit', function(e) {
+    // 1. Evitamos que la página se refresque (opcional si usas Formspree)
+    // e.preventDefault(); 
+
+    const btn = document.querySelector('.btn-submit');
+    
+    // 2. Cambiamos el estilo del botón para dar feedback
+    btn.innerText = 'Enviando...';
+    btn.style.opacity = '0.7';
+    btn.disabled = true;
+
+    // 3. Simulamos el éxito (Si usas un servidor real, esto iría dentro del "fetch")
+    setTimeout(() => {
+        alert('¡Solicitud enviada con éxito! Nos pondremos en contacto pronto.');
+        this.reset(); // Limpia los campos del formulario
+        btn.innerText = 'Enviar solicitud';
+        btn.style.opacity = '1';
+        btn.disabled = false;
+    }, 2000);
+});
+</script>
+</body>
+</html>
+
